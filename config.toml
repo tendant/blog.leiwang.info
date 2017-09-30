@@ -1,3 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "http://blog.leiwang.info/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Random Stuff"
+theme = "minimo"
+# include content marked as draft
+buildDrafts = false
+[params]
+  Subtitle = "Some random thing about technology and sports"
+  AuthorName = "Lei"
+  GitHubUser = "tendant"
