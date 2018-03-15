@@ -9,10 +9,24 @@ buildDrafts = false
   AuthorName = "Lei"
   GitHubUser = "tendant"
 
+[[menu.main]]
+    name = "Home"
+    title = "Home"
+    weight = -110
+    identifier = "home"
+    url = "/"
+
+[[menu.main]]
+    name = "中文"
+    title = "中文"
+    weight = -110
+    identifier = "cn"
+    url = "/categories/中文"
+
 [params.copyright]
 prefix = ""
 holder = "tendant"
-startYear = "2018"
+startYear = "2015"
 suffix = ""
 
 [params.widgets]
