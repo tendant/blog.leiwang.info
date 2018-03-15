@@ -8,3 +8,21 @@ buildDrafts = false
   Subtitle = "Some random thing about technology and sports"
   AuthorName = "Lei"
   GitHubUser = "tendant"
+
+[params.copyright]
+prefix = ""
+holder = "tendant"
+startYear = "2018"
+suffix = ""
+
+[params.widgets]
+homepage = ["recent_posts"]
+
+[params.social]
+email = "tendant@gmail.com"
+github = "tendant"
+twitter = "tendant"
+
+[params.social.config]
+platforms = ["github", "twitter", "email"]
+
