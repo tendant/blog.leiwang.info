@@ -29,14 +29,18 @@ holder = "tendant"
 startYear = "2015"
 suffix = ""
 
+# Recent Posts Widget config
+[recent_posts]
+title = ""                            # default: "Recent Posts"
+length = 10                            # default: 5
+excludeTypes = ["page"]               # default: ["page"]
+
 [params.widgets]
 homepage = ["recent_posts"]
 
 [params.social]
 email = "tendant@gmail.com"
 github = "tendant"
-twitter = "tendant"
 
 [params.social.config]
-platforms = ["github", "twitter", "email"]
-
+platforms = ["github", "email"]
