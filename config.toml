@@ -1,7 +1,7 @@
 BaseURL = "http://blog.leiwang.info/"
 LanguageCode = "en-us"
 Title = "Random Stuff"
-theme = "minimo"
+# theme = "minimo"
 # include content marked as draft
 BuildDrafts = false
 # pygmentsCodeFences = true
