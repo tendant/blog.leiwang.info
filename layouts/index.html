@@ -7,19 +7,7 @@
 
       {{- partial "header" . -}}
 
-      <div class="pb4 center">
-        <h3 class="f3">Recent Post</h3>
-        <ul class="list pa0 fs-normal">
-          <li class="pv2">
-            <time class="f4" datetime="2018-02-27T21:00:00+06:00">2018, Feb 27</time>
-            <a class="link f4 dim normal pa3 mid-gray underline-hover" href="#">Test item 1</a>
-          </li>
-          <li class="pv2">
-            <time class="f4" datetime="2018-02-27T21:00:00+06:00">2018, Feb 27</time>
-            <a class="link f4 dim normal pa3 mid-gray underline-hover" href="#">Test item 2</a>
-          </li>
-        </ul>
-      </div>
+      {{- partial "recent-posts" . -}}
 
       {{- partial "footer" . -}}
 
