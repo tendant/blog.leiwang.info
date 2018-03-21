@@ -6,18 +6,10 @@
   </head>
   <body>
     <div class="container w-75-ns w-100 pa2 center">
-      <nav id="main-menu" class="main-menu fw-1" aria-label="Main Menu">
-        <a class="link f3 black dim underline-hover" href="/">Home</a>
-        <a class="link f3 gray dim underline-hover" href="/categories/%E4%B8%AD%E6%96%87">中文</a>
-      </nav>
 
-      <div class="bb pb4">
-        <div class="header-info">
-          <h1 class="f2">Random Stuff</h1>
-        </div>
-      </div>
+      {{- partial "header" . -}}
 
-      <div class="bb pb4 center">
+      <div class="pb4 center">
         <h3 class="f3">Recent Post</h3>
         <ul class="list pa0 fs-normal">
           <li class="pv2">
@@ -31,7 +23,7 @@
         </ul>
       </div>
 
-      {{- partial "social-menu" -}}
+      {{- partial "footer" . -}}
 
     </div>
   </body>
