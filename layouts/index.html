@@ -5,16 +5,33 @@
     <link rel="stylesheet"  type="text/css" href="css/tachyons.min.css">
   </head>
   <body>
-    <div class="container w-80-ns w-100 pa2 center">
-      <nav id="main-menu" class="main-menu" aria-label="Main Menu">
-        <a class="current" href="/">Home</a>
-        <a href="/categories/%E4%B8%AD%E6%96%87">中文</a>
+    <div class="container w-75-ns w-100 pa2 center">
+      <nav id="main-menu" class="main-menu fw-1" aria-label="Main Menu">
+        <a class="link f3 black dim underline-hover" href="/">Home</a>
+        <a class="link f3 gray dim underline-hover" href="/categories/%E4%B8%AD%E6%96%87">中文</a>
       </nav>
 
-      <div class="container sep-after">
-        <div class="header-info"><h1 class="site-title title">Random Stuff</h1><p class="desc site-desc"></p>
+      <div class="bb pb4">
+        <div class="header-info">
+          <h1 class="f2">Random Stuff</h1>
         </div>
       </div>
+
+      <div class="bb pb4 center">
+        <h3 class="f3">Recent Post</h3>
+        <ul class="list pa0 fs-normal">
+          <li class="pv2">
+            <time class="f4" datetime="2018-02-27T21:00:00+06:00">2018, Feb 27</time>
+            <a class="link f4 dim normal pa3 mid-gray underline-hover" href="#">Test item 1</a>
+          </li>
+          <li class="pv2">
+            <time class="f4" datetime="2018-02-27T21:00:00+06:00">2018, Feb 27</time>
+            <a class="link f4 dim normal pa3 mid-gray underline-hover" href="#">Test item 2</a>
+          </li>
+        </ul>
+      </div>
+
+      {{- partial "social-menu" -}}
 
     </div>
   </body>
