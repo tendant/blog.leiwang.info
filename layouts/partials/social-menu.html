@@ -1,6 +1,16 @@
+{{- $lang := .Site.Language.Lang -}}
+
+{{- $social := .Site.Params.social -}}
+{{- $platforms := ( default .Site.Params.social.config.platforms ) -}}
+
+
 <ul class="list pa1 bt w-85 w-80-ns w-55-l">
+  {{- range $platform := $platforms -}}
+  {{- with $username := ( index $social $platform ) -}}
+
+  {{ if eq "github" $platform }}
   <li class="dib pt2">
-    <a href="https://github.com/example" target="_blank" rel="noopener">
+    <a href="https://github.com/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Github account in new tab</span>
       <svg class="dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2px" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -9,8 +19,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "facebook" $platform }}
   <li class="dib">
-    <a href="https://facebook.com/example" target="_blank" rel="noopener">
+    <a href="https://facebook.com/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Facebook account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -19,8 +32,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+    {{ if eq "twitter" $platform }}
   <li class="dib">
-    <a href="https://twitter.com/example" target="_blank" rel="noopener">
+    <a href="https://twitter.com/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Twitter account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -29,8 +45,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "instagram" $platform }}
   <li class="dib">
-    <a href="https://instagram.com/example" target="_blank" rel="noopener">
+    <a href="https://instagram.com/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Instagram account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -41,8 +60,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "email" $platform }}
   <li class="dib">
-    <a href="mailto:contact@example.com" target="_blank" rel="noopener">
+    <a href="mailto:{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Contact via Email</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -52,8 +74,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "codepen" $platform }}
   <li class="dib">
-    <a href="https://codepen.io/example" target="_blank" rel="noopener">
+    <a href="https://codepen.io/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Codepen account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -66,8 +91,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "gitlab" $platform }}
   <li class="dib">
-    <a href="https://gitlab.com/example" target="_blank" rel="noopener">
+    <a href="https://gitlab.com/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Gitlab account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -76,8 +104,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "linkedin" $platform }}
   <li class="dib">
-    <a href="https://linkedin.com/in/example" target="_blank" rel="noopener">
+    <a href="https://linkedin.com/in/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Linkedin account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -88,8 +119,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "telegram" $platform }}
   <li class="dib">
-    <a href="https://t.me/example" target="_blank" rel="noopener">
+    <a href="https://t.me/{{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Telegram account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -98,8 +132,11 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{ if eq "google_scholar" $platform }}
   <li class="dib">
-    <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" target="_blank" rel="noopener">
+    <a href="https://scholar.google.com/citations?user={{ print $username }}" target="_blank" rel="noopener">
       <span class="screen-reader-text dn">Open Google_scholar account in new tab</span>
       <svg class="icon dib h2 w2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" stroke="#455a64" fill="none">
 
@@ -108,4 +145,9 @@
       </svg>
     </a>
   </li>
+  {{ end }}
+
+  {{- end -}}
+  {{- end -}}
+
 </ul>
