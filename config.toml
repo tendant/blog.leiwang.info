@@ -4,6 +4,7 @@ Title = "Random Stuff"
 theme = "minimo"
 # include content marked as draft
 BuildDrafts = false
+# pygmentsCodeFences = true
 
 [params]
   Subtitle = "Some random thing about technology and sports"
