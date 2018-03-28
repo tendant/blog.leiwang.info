@@ -1,3 +1,13 @@
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>
+        {{- .Title -}}
+      </h1>
+      {{ partial "description" . }}
+    </div>
+    {{ partial "page-meta" . }}
+  </div>
+
 <div class='f4 container entry-content'>
   {{ .Content }}
 </div>
