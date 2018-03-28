@@ -3,50 +3,57 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/open-sans-v15-latinopen-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/open-sans-v15-latin/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url('/fonts/open-sans-v15-latinopen-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/fonts/open-sans-v15-latinopen-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/fonts/open-sans-v15-latinopen-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('/fonts/open-sans-v15-latinopen-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/fonts/open-sans-v15-latinopen-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+       url('/fonts/open-sans-v15-latin/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/open-sans-v15-latin/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/open-sans-v15-latin/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/open-sans-v15-latin/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/open-sans-v15-latin/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+.open-sans {
+  font-family: "Open Sans";
 }
 
 pre {
-    line-height: 1.6em;
-    padding-bottom: 3em;
-    padding: 0.1em 0.5em 0.3em 0.7em;
-    overflow: auto;
-    width: 75%;
+  line-height: 1.6em;
+  padding-bottom: 3em;
+  padding: 0.1em 0.5em 0.3em 0.7em;
+  overflow: auto;
+  width: 75%;
 }
-
 
 code, samp, kbd {
-	font-family: "Courier New", Courier, monospace, sans-serif;
-	text-align: left;
-	color: #555;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  text-align: left;
+  color: #555;
   font-size: 1.25rem;
-	}
+}
+
 pre code {
-	line-height: 1.6em;
-	font-size: 12px;
-	}
+  line-height: 1.6em;
+  font-size: 12px;
+}
+
 pre {
-	padding: 0.1em 0.5em 0.3em 0.7em;
-	border-left: 6px solid #ccc;
-	margin: 1.7em 0 1.7em 0.3em;
-	overflow: auto;
-	width: 93%;
-	}
-/* target IE7 and IE6 */
+  padding: 0.1em 0.5em 0.3em 0.7em;
+  border-left: 6px solid #ccc;
+  margin: 1.7em 0 1.7em 0.3em;
+  overflow: auto;
+  width: 93%;
+}
+
+/* IE7 and IE6 */
 *:first-child+html pre {
-	padding-bottom: 2em;
-	overflow-y: hidden;
-	overflow: visible;
-	overflow-x: auto;
-	}
+  padding-bottom: 2em;
+  overflow-y: hidden;
+  overflow: visible;
+  overflow-x: auto;
+}
+
 * html pre {
-	padding-bottom: 2em;
-	overflow: visible;
-	overflow-x: auto;
-	}
+  padding-bottom: 2em;
+  overflow: visible;
+  overflow-x: auto;
+}
