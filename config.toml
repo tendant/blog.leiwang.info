@@ -1,10 +1,18 @@
 BaseURL = "http://blog.leiwang.info/"
-LanguageCode = "en-us"
+# LanguageCode = "en-us"
 Title = "Random Stuff"
 # theme = "minimo"
 # include content marked as draft
 BuildDrafts = false
 # pygmentsCodeFences = true
+DefaultContentLanguage = "en"
+
+[languages]
+[languages.en]
+title = "Random Stuff"
+
+[languages.cn]
+title = "杂文"
 
 [params]
   Subtitle = "Some random thing about technology and sports"
