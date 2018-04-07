@@ -1,1 +1,1 @@
-hugo -v --debug --bind=$(hostname -I) server
+hugo -v --bind=$(hostname -I) server

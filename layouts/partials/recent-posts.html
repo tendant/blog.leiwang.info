@@ -12,7 +12,7 @@
     </h4>
   </header>
 
-  <ul class='list'>
+  <ul class='list pl0'>
   {{ range ( first $length ( where .Site.RegularPages "Type" "not in" $config.excludeTypes ) ) }}
     {{ .Render "li" }}
   {{ end }}

@@ -2,14 +2,12 @@
 
   {{- partial "head" . -}}
 
-  <body>
+  <body  class="open-sans">
     <div class="container w-75-ns w-100 pa2 center">
 
       {{- partial "header" . -}}
 
-      {{- range .Data.Pages -}}
-        {{- .Content -}}
-      {{- end -}}
+      {{- partial "recent-posts" . -}}
 
       {{- partial "footer" . -}}
 
