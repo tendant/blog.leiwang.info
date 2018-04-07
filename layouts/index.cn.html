@@ -7,7 +7,9 @@
 
       {{- partial "header" . -}}
 
-      {{- partial "recent-posts" . -}}
+      {{- range .Data.Pages -}}
+        {{- .Content -}}
+      {{- end -}}
 
       {{- partial "footer" . -}}
 
