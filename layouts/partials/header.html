@@ -1,10 +1,4 @@
-      <nav id="main-menu" class="main-menu fw-1" aria-label="Main Menu">
-        <a class="link f3 black dim underline-hover" href="/">Home</a>
-        <a class="link f3 gray dim underline-hover" href="/cn">中文</a>
-      </nav>
-
-      <div class="pb2">
-        <div class="header-info">
-          <h1 class="f2">{{.Site.Title}}</h1>
-        </div>
-      </div>
+{{ partial "navbar" . }}
+{{ if (not (in .Site.Params.excludeTitleTypes .Type)) }}
+  {{ partial "page-title" . }}
+{{ end }}

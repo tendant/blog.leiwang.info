@@ -20,6 +20,7 @@ recentPosts = "最新文章"
   Subtitle = "Some random thing about technology and sports"
   AuthorName = "Lei"
   GitHubUser = "tendant"
+  excludeTitleTypes = ["posts", "cn"]
 
 [[menu.main]]
     name = "Home"
