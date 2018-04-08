@@ -10,9 +10,11 @@ DefaultContentLanguage = "en"
 [languages]
 [languages.en]
 title = "Random Stuff"
+recentPosts = "Recent Posts"
 
 [languages.cn]
 title = "杂文"
+recentPosts = "最新文章"
 
 [params]
   Subtitle = "Some random thing about technology and sports"
