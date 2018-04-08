@@ -1,5 +1,0 @@
-# Recent Posts Widget config
-[recent_posts]
-title = ""                            # default: "Recent Posts"
-length = 20                            # default: 5
-excludeTypes = ["page"]               # default: ["page"]

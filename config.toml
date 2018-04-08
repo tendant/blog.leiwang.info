@@ -31,7 +31,7 @@ title = "杂文"
     title = "中文"
     weight = -110
     identifier = "cn"
-    url = "/categories/中文"
+    url = "/cn"
 
 [params.copyright]
 prefix = ""
@@ -48,3 +48,8 @@ github = "tendant"
 
 [params.social.config]
 platforms = ["github", "email"]
+
+[params.recent_posts]
+title = "Recent Posts"                            # default: "Recent Posts"
+length = 20                            # default: 5
+excludetypes = ["page"]               # default: ["page"]
