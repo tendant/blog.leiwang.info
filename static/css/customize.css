@@ -16,6 +16,18 @@
   font-family: "Open Sans";
 }
 
+ul.pagination {
+  list-style-type: none;
+  font-size: 1.5rem;
+  padding-left: var(--spacing-none);
+}
+
+ul.pagination li {
+  display: inline;
+}
+
+/* Code block style begin */
+
 pre {
   line-height: 1.6em;
   padding-bottom: 3em;
@@ -62,3 +74,5 @@ blockquote {
   font-family: "Courier New", Courier, monospace, sans-serif;
   font-size: 1rem;
 }
+
+/* Code block style end */
