@@ -7,6 +7,10 @@ BuildDrafts = false
 # pygmentsCodeFences = true
 DefaultContentLanguage = "en"
 
+Paginate = 20
+
+googleAnalytics = "UA-6332912-4"
+
 [languages]
 [languages.en]
 title = "Random Stuff"
@@ -17,7 +21,7 @@ title = "杂文"
 recentPosts = "最新文章"
 
 [params]
-  Subtitle = "Some random thing about technology and sports"
+  Subtitle = "Some random stuff about technology and sports"
   AuthorName = "Lei"
   GitHubUser = "tendant"
   excludeTitleTypes = ["posts", "cn"]
@@ -55,4 +59,3 @@ platforms = ["github", "email"]
 [params.recent_posts]
 title = "Recent Posts"                            # default: "Recent Posts"
 length = 20                            # default: 5
-excludetypes = ["page"]               # default: ["page"]
