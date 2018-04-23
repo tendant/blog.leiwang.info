@@ -13,7 +13,11 @@
 </div>
 
 <ul id="tags" class="list pl0">
-Tags:
+  {{ if .Params.tags }}
+    {{ if  gt (len .Params.tags) 0 }}
+      Tags:
+    {{ end }}
+  {{ end }}
   {{ range .Params.tags }}
     <li class="dib"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
   {{ end }}
