@@ -1,20 +1,7 @@
-<html lang="en">
+{{ define "main" }}
 
-  {{- partial "head" . -}}
+    {{- partial "recent-posts" . -}}
 
-  <body class="open-sans text-base">
-    <div class="container mx-auto px-4">
+    {{ template "_internal/pagination.html" . }}
 
-      {{- partial "header" . -}}
-
-      {{- partial "recent-posts" . -}}
-
-      {{ template "_internal/pagination.html" . }}
-
-      {{- partial "footer" . -}}
-
-      {{ template "_internal/google_analytics.html" . }}
-
-    </div>
-  </body>
-</html>
+{{ end }}

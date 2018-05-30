@@ -1,0 +1,19 @@
+<html lang="en">
+
+  {{- partial "head" . -}}
+
+  <body class="open-sans text-base">
+    <div class="container mx-auto px-4">
+
+      {{- partial "header" . -}}
+
+      {{ block "main" . }}
+      {{ end }}
+
+      {{- partial "footer" . -}}
+
+      {{ template "_internal/google_analytics.html" . }}
+
+    </div>
+  </body>
+</html>
