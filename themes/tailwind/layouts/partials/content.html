@@ -12,14 +12,14 @@
   {{ .Content }}
 </div>
 
-<ul id="tags" class="list pl0">
+<ul id="tags" class="list-reset pl-0">
   {{ if .Params.tags }}
     {{ if  gt (len .Params.tags) 0 }}
       Tags:
     {{ end }}
   {{ end }}
   {{ range .Params.tags }}
-    <li class="dib"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+    <li class="inline-block"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
   {{ end }}
 </ul>
 
