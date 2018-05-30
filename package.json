@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tendant/blog.leiwang.info/issues"
   },
-  "homepage": "https://github.com/tendant/blog.leiwang.info#readme"
+  "homepage": "https://github.com/tendant/blog.leiwang.info#readme",
+  "devDependencies": {
+    "tailwindcss": "^0.5.3"
+  }
 }
