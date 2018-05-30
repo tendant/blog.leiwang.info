@@ -1,7 +1,8 @@
 BaseURL = "http://blog.leiwang.info/"
 # LanguageCode = "en-us"
 Title = "Random Stuff"
-theme = "tachyons"
+#theme = "tachyons"
+theme = "tailwind"
 # include content marked as draft
 BuildDrafts = false
 # pygmentsCodeFences = true
