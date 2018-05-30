@@ -1,0 +1,18 @@
+<html lang="en">
+
+  {{- partial "head" . -}}
+
+  <body class="open-sans f5 f6-m f7-l">
+    <div class="container w-100 w-80-m w-75-l pa2 center">
+
+      {{- partial "header" . -}}
+
+      {{- partial "content" . -}}
+
+      {{- partial "footer" . -}}
+
+      {{ template "_internal/google_analytics.html" . }}
+
+    </div>
+  </body>
+</html>

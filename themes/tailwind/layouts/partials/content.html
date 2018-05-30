@@ -1,0 +1,26 @@
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>
+        {{- .Title -}}
+      </h1>
+      {{ partial "description" . }}
+    </div>
+    {{ partial "page-meta" . }}
+  </div>
+
+<div class='f6 container entry-content'>
+  {{ .Content }}
+</div>
+
+<ul id="tags" class="list pl0">
+  {{ if .Params.tags }}
+    {{ if  gt (len .Params.tags) 0 }}
+      Tags:
+    {{ end }}
+  {{ end }}
+  {{ range .Params.tags }}
+    <li class="dib"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+  {{ end }}
+</ul>
+
+{{ partial "related-posts-by-tags" . }}

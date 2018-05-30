@@ -1,0 +1,10 @@
+<li class='item pv2'>
+  <div class='meta di pr3'>
+    {{ partial "date" . }}
+  </div>
+    <h3 class='f4 di'>
+      <a href='{{ .Permalink | relURL }}'>
+        {{- .Title -}}
+      </a>
+    </h3>
+</li>

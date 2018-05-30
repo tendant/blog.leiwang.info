@@ -1,0 +1,29 @@
+{{ $.Scratch.Set "count" 0 }}
+{{ $currentPagePermalink := .Permalink }}
+{{ $tags := .Params.tags }}
+{{/* range (where .Site.Pages "Section" "tutorials") */}}
+{{ range .Site.Pages }}
+{{ $isMatchTags := intersect $tags .Params.tags | len | lt 1 }}
+{{ if and $isMatchTags (ne .Permalink $currentPagePermalink) }}
+  {{ if eq ($.Scratch.Get "count") 0 }}
+    Related Posts:
+  {{ end }}
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ $.Scratch.Add "count" 1 }}
+{{ end }}
+{{ end }}
+
+{{ if eq ($.Scratch.Get "count") 0 }}
+  {{ $.Scratch.Set "limit" 0 }}
+  {{/* range (where .Site.Pages "Section" "tutorials") */}}
+  {{ range .Site.Pages }}
+  {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
+  {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 5) }}
+    {{ if eq ($.Scratch.Get "limit") 0 }}
+      Related posts:
+    {{ end }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ $.Scratch.Add "limit" 1 }}
+  {{ end }}
+  {{ end }}
+{{ end }}

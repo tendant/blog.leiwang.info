@@ -1,0 +1,4 @@
+{{ partial "navbar" . }}
+{{ if (not (in .Site.Params.excludeTitleTypes .Type)) }}
+  {{ partial "page-title" . }}
+{{ end }}
