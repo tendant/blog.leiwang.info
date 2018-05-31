@@ -20,9 +20,9 @@
   {{ $isMatchTags := intersect $tags .Params.tags | len | lt 0 }}
   {{ if and $isMatchTags (ne .Permalink $currentPagePermalink) (lt ($.Scratch.Get "limit") 5) }}
     {{ if eq ($.Scratch.Get "limit") 0 }}
-      Related posts:
+      <div class="py-1">Related posts:</div>
     {{ end }}
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a class="py-1" href="{{ .Permalink }}">{{ .Title }}</a>
     {{ $.Scratch.Add "limit" 1 }}
   {{ end }}
   {{ end }}

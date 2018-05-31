@@ -4,7 +4,7 @@
 {{- $platforms := ( default .Site.Params.social.config.platforms ) -}}
 
 
-<ul class="list pa1 bt w-85 w-80-ns w-55-l">
+<ul class="list py-2 pl-0 bt w-85 w-80-ns w-55-l">
   {{- range $platform := $platforms -}}
   {{- with $username := ( index $social $platform ) -}}
 
