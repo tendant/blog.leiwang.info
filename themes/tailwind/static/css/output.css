@@ -4597,6 +4597,19 @@ button,
  * @import "utilities/skew-transforms";
  */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
