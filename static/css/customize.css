@@ -26,6 +26,14 @@ ul.pagination li {
   display: inline;
 }
 
+h2 {
+  color: rgba(0,0,0,.84);
+}
+
+h3 {
+  font-style: normal;
+}
+
 /* Code block style begin */
 
 pre {
