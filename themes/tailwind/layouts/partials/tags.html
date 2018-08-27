@@ -1,0 +1,10 @@
+  <ul id="tags" class="list-reset pl-0 py-1 inline">
+  {{ if .Params.tags }}
+    {{ if  gt (len .Params.tags) 0 }}
+      {{ partial "svg-icons/tag" . }}
+    {{ end }}
+  {{ end }}
+  {{ range .Params.tags }}
+    <li class="inline-block"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>    </li>
+  {{ end }}
+  </ul>
