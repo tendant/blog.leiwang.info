@@ -1,6 +1,13 @@
 <html lang="en">
 
-  {{- partial "head" . -}}
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
+    {{ with .Keywords }}<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }} {{ end }}{{ $e }}{{ end }}">{{ end }}
+    <link rel="canonical" href="">
+    <link rel="stylesheet"  type="text/css" href="/css/output.css">
+    <link rel="stylesheet"  type="text/css" href="/css/customize.css">
+  </head>
 
   <body class="open-sans text-base p-2">
     <div class="container mx-auto text-base p-2">
