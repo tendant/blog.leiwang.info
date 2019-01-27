@@ -1,6 +1,6 @@
 /* open-sans-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Microsoft YaHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', 'Heiti', sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/open-sans-v15-latin/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
