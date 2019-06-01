@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width">
     <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
     {{ with .Keywords }}<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }} {{ end }}{{ $e }}{{ end }}">{{ end }}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet"  type="text/css" href="/css/output.css">
     <link rel="stylesheet"  type="text/css" href="/css/customize.css">
   </head>
