@@ -27,6 +27,7 @@ recentPosts = "最新文章"
   GitHubUser = "tendant"
   excludeTitleTypes = ["posts", "cn"]
 
+[menu]
 [[menu.main]]
     name = "Home"
     title = "Home"
