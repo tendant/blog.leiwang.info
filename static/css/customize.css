@@ -46,6 +46,11 @@ ul.pagination li {
 
 nav ul li a {
   text-decoration: none;
+  color: grey;
+}
+
+nav ul li.active a{
+  text-decoration: underline;
 }
 
 /* Code block style begin */
