@@ -1,10 +1,8 @@
       <nav id="main-menu" class="main-menu font-hairline py-2" aria-label="Main Menu">
-        <a class="link text-2xl black dim underline-hover" href="/">Home</a>
-        <a class="link text-2xl gray dim underline-hover" href="/cn">中文</a>
-        <ul class="navbar-nav ml-auto list-reset inline">
+        <ul class="list-reset">
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
-            <li class="navbar-item inline {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)}} active {{end}}">
+            <li class="inline {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) (and (eq $currentPage.Language.Lang "en") (eq .Name "Home")) (and (eq $currentPage.Language.Lang "cn") (eq .Name "中文")) }} active {{end}}">
               <a class="link text-2xl dim" href="{{.URL}}" title="{{ .Title }}">{{ .Name }}</a>
             </li>
           {{ end }}

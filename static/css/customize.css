@@ -44,6 +44,10 @@ ul.pagination li {
   padding-right: 10px;
 }
 
+nav ul li a {
+  text-decoration: none;
+}
+
 /* Code block style begin */
 
 pre {
