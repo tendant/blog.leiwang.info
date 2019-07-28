@@ -5,7 +5,8 @@ Title = "Random Stuff"
 theme = "tailwind"
 # include content marked as draft
 BuildDrafts = false
-# pygmentsCodeFences = true
+pygmentsCodeFences = true
+pygmentsStyle = "emacs"
 DefaultContentLanguage = "en"
 
 Paginate = 20
