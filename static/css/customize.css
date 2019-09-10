@@ -27,7 +27,7 @@ ul.pagination li {
 }
 
 h2 {
-  color: rgba(0,0,0,.84);
+  color: rgba(0,0,0,0.70);
 }
 
 h3 {
@@ -51,6 +51,14 @@ nav ul li a {
 
 nav ul li.active a{
   text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border-width: 2px;
 }
 
 /* Code block style begin */
