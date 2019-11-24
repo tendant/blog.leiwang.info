@@ -1,0 +1,5 @@
+# Base URL of the site, the only required config argument
+base_url = "http://blog.leiwang.info/"
+# base_url = "localhost"
+
+theme = "stuff"
