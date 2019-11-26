@@ -3,3 +3,20 @@ base_url = "http://blog.leiwang.info/"
 # base_url = "localhost"
 
 theme = "stuff"
+
+[extra]
+author = "Lei"
+
+[[extra.navs]]
+  name = "Home"
+  title = "Home"
+  weight = -110
+  identifier = "home"
+  url = "/"
+
+[[extra.navs]]
+  name = "中文"
+  title = "中文"
+  weight = -110
+  identifier = "cn"
+  url = "/cn"
