@@ -4,6 +4,17 @@ base_url = "http://blog.leiwang.info/"
 
 theme = "stuff"
 
+taxonomies = [
+  { name = "tags" },
+  { name = "categories", paginate_by = 10},
+  { name = "tags", lang = "cn"},
+  { name = "categories", lang = "cn"}
+]
+
+languages = [
+  { code = "cn" }
+]
+
 [extra]
 author = "Lei"
 
@@ -12,6 +23,7 @@ author = "Lei"
   title = "Home"
   weight = -110
   identifier = "home"
+  lang = "en"
   url = "/"
 
 [[extra.navs]]
@@ -19,4 +31,5 @@ author = "Lei"
   title = "中文"
   weight = -110
   identifier = "cn"
+  lang = "cn"
   url = "/cn"
