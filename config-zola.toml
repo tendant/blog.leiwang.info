@@ -2,6 +2,8 @@
 base_url = "http://blog.leiwang.info/"
 # base_url = "localhost"
 
+title = "Random Stuff"
+
 theme = "stuff"
 
 taxonomies = [
