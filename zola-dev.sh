@@ -1,0 +1,1 @@
+zola --config config-zola.toml serve --drafts
