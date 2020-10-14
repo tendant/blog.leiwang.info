@@ -1,3 +1,4 @@
+#+EXPORT_FILE_NAME: index.html
 #+REVEAL_ROOT: ../reveal.js
 #+REVEAL_HLEVEL: 2
 #+REVEAL_THEME: white
